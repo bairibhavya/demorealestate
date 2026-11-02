@@ -1,0 +1,22 @@
+# Go-live tests (check every item with real Supabase data)
+
+- [ ] `npm ci` and `npm run build` succeed on Windows / CI.
+- [ ] Existing admin Auth user has `crm_memberships.role = 'admin'`.
+- [ ] Unauthenticated visitor cannot open `/admin/dashboard`, `/admin/leads`, employee directory, or see CRM data by REST request.
+- [ ] Admin creates employee (EMP0001), uploads photo, edits fields, deactivates/reactivates employee.
+- [ ] Employee cannot promote their role or link an unrelated Auth UUID.
+- [ ] Employee cannot read/edit another employee's leads even by directly requesting Supabase REST rows.
+- [ ] Creating employee Auth user and linking UUID gives staff its own dashboard.
+- [ ] Reassign lead, verify staff access changes immediately after reload.
+- [ ] Add follow-up date and activity note; check today and overdue filters and timeline.
+- [ ] Create/edit site visit; update status and outcome; verify staff RLS.
+- [ ] Create booking, update amount received, verify outstanding and sales export.
+- [ ] Dashboard statistic cards and employee performance link to real records.
+- [ ] Website Contact form submits anonymously without revealing existing leads.
+- [ ] Verify public lead intake spam/duplicate handling, INSERT grants and RLS policies.
+- [ ] Property Add/Update works with Plot (empty bed/bath), images and price.
+- [ ] Public property details and contact property prefill work.
+- [ ] Test widths 320px, 375px, 768px, 1024px, desktop; scrolling, navigation and modal accessibility.
+- [ ] Check WhatsApp number and links; configure business number in .env.local.
+- [ ] Audit legacy `properties`, `property_images`, `lead_activity`, storage policies.
+- [ ] Document retention and staff account offboarding.

@@ -1,0 +1,57 @@
+.fd-button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:15px 34px;
+border:none;
+border-radius:999px;
+cursor:pointer;
+font-weight:600;
+font-size:15px;
+transition:.35s;
+position:relative;
+overflow:hidden;
+}
+
+.fd-button--primary{
+background:linear-gradient(135deg,#D4AF37,#F6D365);
+color:#111;
+box-shadow:0 15px 35px rgba(212,175,55,.35);
+}
+
+.fd-button--primary:hover{
+transform:translateY(-4px);
+box-shadow:0 22px 45px rgba(212,175,55,.45);
+}
+
+.fd-button--outline{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+color:#fff;
+backdrop-filter:blur(20px);
+}
+
+.fd-button--outline:hover{
+background:#D4AF37;
+color:#111;
+}
+
+.fd-button--full{
+width:100%;
+}
+
+.loader{
+width:18px;
+height:18px;
+border:2px solid rgba(255,255,255,.4);
+border-top-color:#fff;
+border-radius:50%;
+animation:spin .8s linear infinite;
+}
+
+@keyframes spin{
+to{
+transform:rotate(360deg);
+}
+}

@@ -1,0 +1,234 @@
+/* ===========================
+   Fade Up
+=========================== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Fade In
+=========================== */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   Scale
+=========================== */
+
+.scale-in {
+  opacity: 0;
+  transform: scale(.92);
+  animation: scaleIn .7s ease forwards;
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+   Slide Left
+=========================== */
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slideLeft .8s ease forwards;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===========================
+   Slide Right
+=========================== */
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slideRight .8s ease forwards;
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===========================
+   Floating
+=========================== */
+
+.floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* ===========================
+   Pulse
+=========================== */
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+   Rotate
+=========================== */
+
+.rotate {
+  animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===========================
+   Shine Button Effect
+=========================== */
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -120%;
+  width: 60%;
+  height: 180%;
+  transform: rotate(20deg);
+  background: rgba(255,255,255,.35);
+}
+
+.shine:hover::after {
+  left: 180%;
+  transition: 1s ease;
+}
+
+/* ===========================
+   Card Hover
+=========================== */
+
+.hover-card {
+  transition: .35s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ===========================
+   Image Zoom
+=========================== */
+
+.image-zoom {
+  overflow: hidden;
+}
+
+.image-zoom img {
+  transition: .7s ease;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.hover-button {
+  transition: .35s ease;
+}
+
+.hover-button:hover {
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   Delays
+=========================== */
+
+.delay-1 {
+  animation-delay: .1s;
+}
+
+.delay-2 {
+  animation-delay: .2s;
+}
+
+.delay-3 {
+  animation-delay: .3s;
+}
+
+.delay-4 {
+  animation-delay: .4s;
+}
+
+.delay-5 {
+  animation-delay: .5s;
+}

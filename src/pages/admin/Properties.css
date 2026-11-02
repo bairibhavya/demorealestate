@@ -1,0 +1,474 @@
+/* ==========================================
+   PROPERTY MANAGEMENT
+========================================== */
+
+.properties-page{
+
+padding:30px;
+
+min-height:100vh;
+
+background:#090909;
+
+color:#fff;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.properties-top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.properties-top h1{
+
+font-size:34px;
+
+font-weight:700;
+
+margin-bottom:6px;
+
+}
+
+.properties-top p{
+
+color:#9f9f9f;
+
+font-size:15px;
+
+}
+
+.add-property-btn{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:14px 24px;
+
+background:linear-gradient(135deg,#D4AF37,#B8860B);
+
+color:#111;
+
+text-decoration:none;
+
+border-radius:14px;
+
+font-weight:700;
+
+transition:.35s;
+
+box-shadow:0 10px 30px rgba(212,175,55,.25);
+
+}
+
+.add-property-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 35px rgba(212,175,55,.40);
+
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.properties-toolbar{
+
+margin-bottom:35px;
+
+}
+
+.search-box{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+background:#141414;
+
+border:1px solid rgba(212,175,55,.18);
+
+padding:14px 18px;
+
+border-radius:14px;
+
+max-width:420px;
+
+transition:.35s;
+
+}
+
+.search-box:hover,
+.search-box:focus-within{
+
+border-color:#D4AF37;
+
+box-shadow:0 0 18px rgba(212,175,55,.15);
+
+}
+
+.search-box svg{
+
+color:#D4AF37;
+
+}
+
+.search-box input{
+
+width:100%;
+
+background:transparent;
+
+border:none;
+
+outline:none;
+
+color:#fff;
+
+font-size:15px;
+
+}
+
+.search-box input::placeholder{
+
+color:#777;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.property-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+
+gap:28px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.property-card{
+
+background:#121212;
+
+border:1px solid rgba(212,175,55,.12);
+
+border-radius:22px;
+
+overflow:hidden;
+
+transition:.35s;
+
+}
+
+.property-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#D4AF37;
+
+box-shadow:0 25px 45px rgba(212,175,55,.15);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.property-image{
+
+height:230px;
+
+position:relative;
+
+overflow:hidden;
+
+background:#1b1b1b;
+
+}
+
+.property-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.property-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.image-placeholder{
+
+width:100%;
+
+height:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#D4AF37;
+
+}
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status-badge{
+
+position:absolute;
+
+top:18px;
+
+right:18px;
+
+padding:8px 14px;
+
+border-radius:40px;
+
+font-size:13px;
+
+font-weight:700;
+
+backdrop-filter:blur(10px);
+
+}
+
+.status-badge.available{
+
+background:#2ECC71;
+
+color:#fff;
+
+}
+
+.status-badge.sold{
+
+background:#E74C3C;
+
+color:#fff;
+
+}
+
+.status-badge.comingsoon{
+
+background:#F39C12;
+
+color:#fff;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+.property-body{
+
+padding:24px;
+
+}
+
+.property-body h2{
+
+font-size:22px;
+
+margin-bottom:20px;
+
+color:#fff;
+
+}
+
+.property-info{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+margin-bottom:24px;
+
+}
+
+.property-info p{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+color:#BDBDBD;
+
+font-size:15px;
+
+}
+
+.property-info svg{
+
+color:#D4AF37;
+
+}
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.property-actions{
+  display:flex;
+  gap:14px;
+  width:100%;
+  margin-top:25px;
+}
+
+.property-actions .edit-btn,
+.property-actions .delete-btn{
+  flex:1;
+  height:52px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:12px;
+  font-weight:700;
+  text-decoration:none;
+  font-size:16px;
+  box-sizing:border-box;
+}
+.edit-btn{
+  background:#D4AF37;
+  color:#111;
+  border:none;
+  transition:.3s;
+}
+
+.edit-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(212,175,55,.25);
+}
+.delete-btn{
+  background:#2A2A2A;
+  color:#ff5a5a;
+  border:none;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.delete-btn:hover{
+  background:#ff5a5a;
+  color:#fff;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.property-grid{
+
+grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+}
+
+}
+
+@media(max-width:768px){
+
+.properties-page{
+
+padding:18px;
+
+}
+
+.properties-top{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.search-box{
+
+max-width:100%;
+
+}
+
+.property-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.property-image{
+
+height:220px;
+
+}
+
+.property-actions{
+
+flex-direction:column;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.properties-top h1{
+
+font-size:28px;
+
+}
+
+.property-body{
+
+padding:18px;
+
+}
+
+.property-body h2{
+
+font-size:20px;
+
+}
+
+}

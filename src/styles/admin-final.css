@@ -1,0 +1,44 @@
+
+:root{--crm-bg:#f2f7fb;--crm-surface:#fff;--crm-ink:#12263e;--crm-green:#087f61;--crm-border:#dfebf0}
+.dashboard-page,.properties-page,.add-property-page,.leads-page,.reports-page,.edit-property-page,.edit-lead-page{background:transparent!important;color:var(--crm-ink)!important;padding:24px!important;min-height:0!important;font-family:inherit!important}
+.dashboard-page h1,.properties-page h1,.add-property-page h2,.leads-page h1,.reports-page h1{color:var(--crm-ink)!important;font-family:inherit!important;font-weight:750!important;letter-spacing:-.035em!important}
+.dashboard-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;background:transparent!important;padding:0!important;border:0!important}
+.stat-card,.dashboard-card{background:white!important;border:1px solid var(--crm-border)!important;color:var(--crm-ink)!important;border-radius:16px!important;min-height:150px!important;padding:22px!important;box-shadow:0 6px 22px #142d4810!important;cursor:pointer;transition:transform .2s,box-shadow .2s!important}
+.stat-card:hover,.dashboard-card:hover{transform:translateY(-4px)!important;box-shadow:0 16px 34px #142d4820!important}
+.stat-card h2,.stat-card p,.dashboard-card h2,.dashboard-card p{color:var(--crm-ink)!important}
+.stat-card svg,.dashboard-card svg{color:var(--crm-green)!important}
+.property-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;background:transparent!important}
+.property-card{background:#fff!important;border:1px solid var(--crm-border)!important;border-radius:16px!important;padding:0!important;min-height:0!important;height:auto!important;overflow:hidden!important;display:flex!important;flex-direction:column!important;box-shadow:0 6px 20px #142d4810!important}
+.property-image{height:170px!important;min-height:0!important;overflow:hidden!important}
+.property-image img{height:100%!important;width:100%!important;object-fit:cover!important}
+.property-body{padding:16px!important;min-height:0!important;flex:1!important;display:flex!important;flex-direction:column!important;gap:9px!important}
+.property-card h2,.property-card h3,.property-card p,.property-card span{color:var(--crm-ink)!important}
+.property-card button,.property-card a{min-height:36px!important}
+.property-form,.add-property-page form,.report-card,.crm-table,.table-row,.table-head,.reports-page .report-filter,.properties-toolbar,.search-box{background:#fff!important;color:var(--crm-ink)!important;border:1px solid var(--crm-border)!important;box-shadow:0 5px 20px #142d480b!important;border-radius:14px!important}
+.property-form{padding:28px!important;max-width:1200px!important;margin:0 auto!important}
+.property-form input,.property-form select,.property-form textarea,.report-filter input,.report-filter select,.search-box input{background:white!important;color:var(--crm-ink)!important;border:1px solid #d5e2e9!important;border-radius:9px!important}
+.property-form textarea{min-height:115px!important}
+.property-form button[type=submit],.add-property-btn,.export-btn,.report-filter button{background:var(--crm-green)!important;color:white!important;border:0!important;border-radius:9px!important;box-shadow:none!important}
+.export-btn,.report-filter button{width:auto!important;max-width:max-content!important;min-width:120px!important;padding:11px 18px!important;margin-left:auto!important}
+.leads-top{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:14px!important}
+.leads-top h1{flex-basis:100%!important}
+.leads-top .search-box{flex:1 1 350px!important}
+.crm-table{padding:8px!important;overflow-x:auto!important}
+.table-head{background:#e6f6f0!important;color:#087f61!important;border:0!important;min-height:46px!important}
+.table-head div,.table-row div,.table-row h3,.table-row p{color:var(--crm-ink)!important}
+.table-row{background:#fff!important;border:0!important;border-bottom:1px solid var(--crm-border)!important;border-radius:0!important;padding:13px 12px!important;margin:0!important;min-height:72px!important;box-shadow:none!important}
+.table-row:hover{background:#f4faf8!important}
+.table-row button,.edit-btn{background:#e7f5ef!important;color:var(--crm-green)!important;border-radius:9px!important}
+.reports-page .report-filter{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:12px!important;padding:15px!important}
+.reports-page .report-filter input,.reports-page .report-filter select{flex:1 1 160px!important;max-width:260px!important}
+.report-card{margin:12px 0!important;padding:0!important;overflow:hidden!important;min-height:0!important;box-shadow:0 5px 20px #142d480b!important}
+.report-header{display:flex!important;align-items:center!important;justify-content:space-between!important;padding:15px 20px!important;background:#fff!important;cursor:pointer!important;list-style:none!important}
+.report-header h2,.report-header p,.report-grid p,.report-grid label,.report-card small,.report-note{color:var(--crm-ink)!important}
+.report-header h2{font-size:18px!important;margin:0!important}
+.report-card:not([open]) .report-grid,.report-card:not([open]) .report-note,.report-card:not([open]) button{display:none!important}
+.report-card[open] .report-grid{padding:15px 20px!important;background:#fbfdfe!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+.report-grid>div{min-width:0!important}
+.report-card button{background:var(--crm-green)!important;color:white!important;border-radius:9px!important}
+@media(max-width:1100px){.dashboard-grid,.property-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.report-card[open] .report-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:680px){.dashboard-page,.properties-page,.add-property-page,.leads-page,.reports-page{padding:14px!important}.dashboard-grid,.property-grid{grid-template-columns:1fr!important}.report-card[open] .report-grid{grid-template-columns:1fr!important}.leads-top .search-box{flex-basis:100%!important}.property-form{padding:16px!important}.table-head,.table-row{min-width:720px!important}}
+@media(prefers-reduced-motion:reduce){.stat-card,.dashboard-card,.property-card{transition:none!important}}

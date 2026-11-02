@@ -1,0 +1,240 @@
+.contact-form-section{
+
+padding:120px 0;
+
+background:#101010;
+
+}
+
+.contact-form-wrapper{
+
+width:min(92%,1300px);
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+.form-group{
+
+display:flex;
+
+flex-direction:column;
+
+gap:8px;
+
+margin-bottom:18px;
+
+}
+
+.form-group label{
+
+color:#ffffff;
+
+font-size:15px;
+
+font-weight:600;
+
+}
+
+.form-group input[type="date"]{
+
+padding:14px 16px;
+
+border-radius:10px;
+
+border:1px solid rgba(255,255,255,.15);
+
+background:#181818;
+
+color:#ffffff;
+
+font-size:15px;
+
+outline:none;
+
+}
+
+.form-group input[type="date"]:focus{
+
+border-color:#d4af37;
+
+}
+
+.checkbox-group{
+
+margin-bottom:20px;
+
+}
+
+.checkbox-group label{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+color:#ffffff;
+
+font-weight:500;
+
+cursor:pointer;
+
+}
+
+.radio-group{
+
+display:flex;
+
+gap:30px;
+
+margin-top:8px;
+
+}
+
+.radio-group label{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+cursor:pointer;
+
+color:#ffffff;
+
+font-weight:500;
+
+}
+
+.radio-group input{
+
+accent-color:#d4af37;
+
+}
+
+.checkbox-group input{
+
+accent-color:#d4af37;
+
+}
+
+.contact-left span{
+
+color:#D4AF37;
+
+letter-spacing:3px;
+
+font-size:.82rem;
+
+}
+
+.contact-left h2{
+
+font-size:3rem;
+
+color:#fff;
+
+margin:20px 0;
+
+}
+
+.contact-left p{
+
+color:#c5c5c5;
+
+line-height:2;
+
+}
+
+.contact-form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+padding:18px 22px;
+
+background:#181818;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:14px;
+
+color:#fff;
+
+font-size:15px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+border-color:#D4AF37;
+
+}
+
+@media(max-width:992px){
+
+.contact-form-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* Property selection shared by direct Contact Us and property-specific enquiries. */
+.contact-form .contact-property-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.contact-form .contact-property-field > label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #18344c;
+}
+.contact-form .contact-property-field select {
+  display: block;
+  width: 100%;
+  min-height: 49px;
+  padding: 12px 14px;
+  border: 1px solid #d5e4eb;
+  border-radius: 12px;
+  background: #fff;
+  color: #173249;
+  font: inherit;
+  font-size: 14px;
+}
+.contact-form .contact-property-field select:focus-visible {
+  outline: 3px solid rgba(8,127,97,.18);
+  border-color: #087f61;
+}
+.contact-form .contact-property-field small {
+  color: #678093;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.contact-form .contact-property-field a { color: #087f61; font-weight: 700; }

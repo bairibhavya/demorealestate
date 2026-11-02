@@ -1,0 +1,26 @@
+:root{
+
+/* COLORS */
+
+--bg:#0A0A0A;
+--surface:#121212;
+--surface2:#1A1A1A;
+
+--gold:#C8A96A;
+--gold-light:#DFC28C;
+
+--white:#F8F8F8;
+--text:#D7D7D7;
+--muted:#8F8F8F;
+
+--border:rgba(255,255,255,.08);
+
+--shadow:0 30px 80px rgba(0,0,0,.45);
+
+--radius:22px;
+
+/* SPACING */
+
+--container:1400px;
+
+}

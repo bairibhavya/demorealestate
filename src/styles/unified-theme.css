@@ -1,0 +1,45 @@
+/* Shared marketplace visual identity — applies to every page. */
+:root{--brand-navy:#10243c;--brand-green:#087a5b;--brand-pale:#eef7ff;--brand-text:#53677b;--brand-border:#e3e9ef}
+body{background:#fff;color:var(--brand-navy)}
+/* Public navigation is the same on Home, Contact, About and Properties. */
+body:has(.navbar) .navbar{background:#fff!important;border-bottom:1px solid #e6ebef!important;box-shadow:0 2px 16px #10243c0b!important}
+body:has(.navbar) .navbar .nav a,body:has(.navbar) .navbar .demo-wordmark,body:has(.navbar) .navbar .admin-btn{color:var(--brand-navy)!important}
+body:has(.navbar) .navbar .demo-wordmark span,body:has(.navbar) .navbar .nav a.active-link,body:has(.navbar) .navbar .nav a:hover{color:var(--brand-green)!important}
+body:has(.navbar) .navbar .nav a:after{background:var(--brand-green)!important}
+body:has(.navbar) .navbar .desktop-contact .admin-btn{background:#fff!important;border:1px solid var(--brand-border)!important;color:var(--brand-navy)!important}
+/* Replace the old gold button with accessible emerald green everywhere. */
+.fd-button--primary{background:#087a5b!important;color:white!important;box-shadow:0 10px 26px #087a5b24!important}
+.fd-button--primary:hover{background:#06694f!important;box-shadow:0 14px 28px #087a5b30!important}
+.fd-button--outline{border:1px solid #cbd9df!important;color:#087a5b!important;background:#fff!important}
+.fd-button--outline:hover{background:#edf7f3!important}
+/* Contact page */
+.unified-contact{background:#fff;color:#10243c;font-family:Manrope,Arial,sans-serif}
+.unified-contact .contact-hero{background:linear-gradient(110deg,#eef7ff 0%,#f7fbff 65%,#edf6f3 100%)!important;min-height:390px;height:auto!important;padding:150px 20px 85px}
+.unified-contact .contact-hero-content span{color:#087a5b!important;border-color:#c5e3d8!important;background:#e6f4ee!important;letter-spacing:.16em}
+.unified-contact .contact-hero-content h1{font-family:Manrope,Arial,sans-serif!important;color:#10243c!important;font-size:clamp(35px,4.3vw,62px)!important;letter-spacing:-.045em}
+.unified-contact .contact-hero-content p{color:#53677b!important;line-height:1.8!important}
+.unified-contact .contact-info{background:#fff!important;padding:75px 0!important}
+.unified-contact .info-card{background:#fff!important;border:1px solid #e3e9ef!important;box-shadow:0 10px 30px #10243c0a!important;border-radius:16px!important}
+.unified-contact .info-card:hover{border-color:#087a5b!important;box-shadow:0 16px 35px #10243c16!important}
+.unified-contact .info-card svg,.unified-contact .contact-left span{color:#087a5b!important}
+.unified-contact .info-card h3,.unified-contact .contact-left h2{color:#10243c!important;font-family:Manrope,Arial,sans-serif!important}
+.unified-contact .info-card p,.unified-contact .contact-left p{color:#53677b!important}
+.unified-contact .contact-form-section,.unified-contact .contact-map{background:#f6f8fb!important}
+.unified-contact .contact-form-section{padding:85px 0!important}
+.unified-contact .contact-form{background:white;padding:30px;border:1px solid #e3e9ef;border-radius:18px;box-shadow:0 12px 35px #10243c0c}
+.unified-contact .contact-form input,.unified-contact .contact-form textarea,.unified-contact .form-group input[type=date]{background:#fff!important;border:1px solid #dce6ed!important;color:#10243c!important}
+.unified-contact .form-group label,.unified-contact .radio-group label,.unified-contact .checkbox-group label{color:#10243c!important}
+.unified-contact input[type=radio],.unified-contact input[type=checkbox]{accent-color:#087a5b!important}
+.unified-contact .contact-form input:focus,.unified-contact .contact-form textarea:focus{border-color:#087a5b!important;box-shadow:0 0 0 3px #087a5b17!important}
+.unified-contact .map-wrapper{border-color:#e3e9ef!important}
+/* Admin: keep all current functionality and replace the dark visual shell. */
+.admin-layout,.admin-main,.admin-content{background:#f6f8fb!important;color:#10243c!important}
+.admin-sidebar{background:#fff!important;border-right:1px solid #e3e9ef!important;box-shadow:2px 0 16px #10243c08!important}
+.admin-sidebar .sidebar-logo{border-bottom:1px solid #e3e9ef!important}
+.admin-sidebar .sidebar-logo h2{color:#10243c!important}
+.admin-sidebar .sidebar-logo span{color:#087a5b!important}
+.admin-layout h1,.admin-layout h2,.admin-layout h3,.admin-layout h4{color:#10243c}
+.admin-layout p,.admin-layout label{color:#53677b}
+.admin-layout input,.admin-layout select,.admin-layout textarea{background:#fff;color:#10243c;border-color:#dce6ed}
+.admin-layout button[type=submit]{background:#087a5b;color:#fff}
+@media(max-width:768px){.unified-contact .contact-hero{padding:125px 16px 60px;min-height:330px}.unified-contact .contact-form{padding:20px}.unified-contact .contact-info{padding:45px 0!important}.unified-contact .contact-form-section{padding:55px 0!important}}

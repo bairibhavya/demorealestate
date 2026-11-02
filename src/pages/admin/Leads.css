@@ -1,0 +1,29 @@
+/* Dedicated Customer Leads layout. No inherited fixed heights. */
+.leads-page{width:100%;max-width:1500px;margin:0 auto;min-width:0}
+.leads-top{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;gap:12px;padding:12px!important;margin:0 0 16px!important;height:auto!important;min-height:0!important;max-height:none!important}
+.leads-top .search-box{display:flex;align-items:center;gap:10px;height:46px!important;min-height:0!important;max-height:46px!important;flex:1 1 300px!important;width:auto!important;max-width:none!important;padding:0 13px!important;margin:0!important;background:#fff!important;border:1px solid #dce8ef!important;border-radius:11px!important}
+.leads-top .search-box input{min-width:0;width:100%!important;height:40px!important;min-height:0!important;max-height:40px!important;flex:1 1 auto!important;padding:0!important;margin:0!important;border:0!important;box-shadow:none!important;background:transparent!important;color:#142940!important;font-size:14px!important}
+.leads-top .search-box svg{flex-shrink:0;color:#07835f}
+.leads-top .export-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:auto!important;max-width:none!important;min-width:0!important;flex:0 0 auto!important;height:46px!important;padding:0 16px!important;margin:0!important;background:#07835f!important;color:white!important;border:0;border-radius:11px;font-weight:700;cursor:pointer}
+.crm-table{width:100%;padding:7px!important;overflow:visible!important;background:rgba(255,255,255,.87)!important;border:1px solid #e0e9f1;border-radius:17px}
+.table-head,.table-row{display:grid;grid-template-columns:minmax(185px,2fr) minmax(125px,1.25fr) minmax(110px,1.15fr) minmax(105px,.9fr) minmax(115px,1fr) 85px;align-items:center;column-gap:10px}
+.table-head{padding:13px 15px;background:#eaf7f3!important;border:0!important;border-radius:10px;color:#09674f;font-size:12px;font-weight:800}
+.table-row{padding:14px 15px;min-height:88px;background:transparent!important;border:0!important;border-bottom:1px solid #e6eef2!important;border-radius:0!important;transition:background .2s ease}
+.table-row:last-child{border-bottom:none!important}.table-row:hover{background:#f5faf9!important}
+.crm-lead-identity{display:flex;align-items:center;gap:11px;min-width:0}.crm-lead-identity>div{min-width:0}.crm-avatar{display:grid;place-items:center;width:39px;height:39px;flex:0 0 auto;border-radius:50%;background:#dff7eb;color:#087a5b;font-weight:800}
+.crm-lead-identity h3{font-size:14px!important;font-weight:800!important;margin:0 0 5px!important;line-height:1.3;color:#162a41!important;overflow-wrap:anywhere}.crm-lead-identity p{display:flex;align-items:center;gap:6px;font-size:11px;line-height:1.65;color:#677b90!important;margin:0!important;overflow-wrap:anywhere}.crm-lead-identity p svg{color:#07835f;flex-shrink:0}
+.crm-cell{font-size:13px;color:#2f475d!important;overflow-wrap:anywhere}.crm-mobile-label{display:none}.crm-table .edit-btn{width:auto!important;padding:9px 13px!important;background:#e4f5ed!important;color:#067b59!important;border:1px solid #bfe6d5!important;font-size:12px;border-radius:9px;cursor:pointer}
+.badge{display:inline-flex;align-items:center;padding:6px 10px;border-radius:50px;font-size:11px;font-weight:800;background:#e6f4fb;color:#226d8d}.badge.new,.badge.pending{background:#dcf8e9;color:#087247}.badge.interested{background:#e0efff;color:#1e5bad}.badge.closed{background:#d9f8e5;color:#146d40}.badge.sitevisit{background:#fff1d4;color:#91620c}.badge.negotiation{background:#f1e7ff;color:#7145a3}
+.crm-empty{padding:54px 15px;text-align:center;color:#64778b}
+@media(max-width:1150px){.table-head,.table-row{grid-template-columns:minmax(160px,2fr) minmax(110px,1fr) 95px 105px 90px}.table-head>div:nth-child(3),.table-row>.crm-cell:nth-child(3){display:none}}
+@media(max-width:850px){.table-head{display:none!important}.table-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start;border:1px solid #e2eaf0!important;border-radius:12px!important;padding:15px;margin:9px 5px;background:white!important}.table-row>.crm-lead-identity{grid-column:1/-1}.crm-mobile-label{display:block;font-size:10px;color:#8797a5;margin:0 0 4px}.table-row>.crm-cell:last-child{display:flex;justify-content:flex-end;align-items:flex-end}.table-row>.crm-cell:nth-child(3){display:block}.crm-table{padding:5px!important}}
+@media(max-width:540px){.leads-top{flex-direction:column}.leads-top .search-box{width:100%!important;flex:0 0 46px!important}.leads-top .export-btn{align-self:flex-end}.table-row{grid-template-columns:1fr 1fr}.crm-cell{font-size:12px}.crm-page-title{gap:8px}}
+
+/* Open a linked property directly from Customer Leads. */
+.crm-property-link {
+  color: #087f61;
+  font-weight: 700;
+  text-decoration: none;
+}
+.crm-property-link:hover { text-decoration: underline; }
+.crm-property-link:focus-visible { outline: 2px solid #087f61; outline-offset: 2px; }

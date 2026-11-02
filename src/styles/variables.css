@@ -1,0 +1,86 @@
+:root {
+  /* Brand Colors */
+  --primary: #0f766e;
+  --primary-light: #14b8a6;
+  --primary-dark: #115e59;
+
+  --secondary: #2563eb;
+  --accent: #f59e0b;
+
+  /* Backgrounds */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+
+  /* Text */
+  --text: #0f172a;
+  --text-light: #475569;
+  --text-muted: #94a3b8;
+  --white: #ffffff;
+
+  /* Borders */
+  --border: rgba(15, 23, 42, 0.08);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #14b8a6 0%,
+    #2563eb 100%
+  );
+
+  --gradient-gold: linear-gradient(
+    135deg,
+    #f59e0b,
+    #fbbf24
+  );
+
+  --gradient-dark: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(15,23,42,.06);
+
+  --shadow-md: 0 10px 30px rgba(15,23,42,.10);
+
+  --shadow-lg: 0 20px 60px rgba(15,23,42,.18);
+
+  --shadow-xl: 0 30px 80px rgba(15,23,42,.24);
+
+  /* Radius */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* Layout */
+  --container: 1280px;
+  --section-space: 120px;
+
+  /* Navbar */
+  --navbar-height: 82px;
+
+  /* Transition */
+  --transition: 0.35s ease;
+
+  /* Blur */
+  --blur: blur(16px);
+
+  /* Z Index */
+  --z-navbar: 1000;
+  --z-modal: 2000;
+  --z-loader: 9999;
+
+  /* Fonts */
+  --font-heading:
+    "Poppins",
+    sans-serif;
+
+  --font-body:
+    "Inter",
+    sans-serif;
+}
